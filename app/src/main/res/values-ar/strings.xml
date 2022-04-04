@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YallaJomla</string>
+    <string name="view_all">اقسام اكتر</string>
+    <string name="view_all1">عروض اكتر </string>
+    <string name="view_all_traders">كل التجار </string>
+
+    <string name="header1">بتدور علي ايه يامحمد ؟</string>
+    <string name="header3">التجار المتميزين</string>
+
+    <string name="header2">عروض متفوتهاش</string>
+    <string name="title">عنوان</string>
+    <string name="on_line">اون لاين</string>
+    <string name="on_shop">في المحل</string>
+    <string name="sub_title">عنوان 2</string>
+    <string name="videos">فيديوهات</string>
+</resources>

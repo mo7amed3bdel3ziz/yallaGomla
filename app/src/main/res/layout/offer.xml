@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize">
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_favorite_border"
+        />
+
+    <ImageView
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_toEndOf="@+id/search"
+        android:padding="12dp"
+        android:src="@drawable/ic_share_24" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow_back" />
+</RelativeLayout>

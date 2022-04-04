@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.MainActivity">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="415dp"
+            android:layout_height="208dp"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-2dp">
+
+            <ImageView
+
+                android:layout_width="215dp"
+                android:layout_height="194dp"
+                android:src="@drawable/bag"
+
+                />
+
+            <TextView
+                android:id="@+id/text_view1"
+                android:layout_width="126dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="63dp"
+                android:gravity="center_vertical"
+                android:text="شنطة حريمى"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/text_view1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="59dp"
+                android:text="كيوا دولار سايت اميت لابوري ابت دولار ماجنام نايساي يوت الايكيوايد اكس..."
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="123dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/animation"
+                android:backgroundTint="@android:color/holo_orange_dark"
+
+                android:text="احصل علي العرض" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="بتدور علي ايه يامحمد ؟"
+            android:textSize="22.7dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="106dp"
+            android:layout_height="35dp"
+            android:text="اقسام اكتر >"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.05" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="4dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="413dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteX="4dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="126dp"
+                                android:layout_height="166dp"
+                                android:src="@drawable/phone" />
+
+                            <ImageView
+                                android:layout_width="126dp"
+                                android:layout_height="166dp"
+                                android:src="@drawable/phone" />
+
+                            <ImageView
+                                android:layout_width="113dp"
+                                android:layout_height="148dp"
+                                android:src="@drawable/furnture" />
+
+                            <ImageView
+                                android:layout_width="113dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/boy" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/multy_offers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="49dp"
+                            android:layout_marginStart="11dp"
+                            android:gravity="center"
+                            android:text="عروض اكتر >"
+                            android:textSize="19dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="49dp"
+                            android:layout_marginStart="101dp"
+                            android:text="عروض متفوتهاش "
+                            android:textSize="22.7dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="126dp"
+                                android:layout_height="166dp"
+                                android:src="@drawable/phone" />
+
+                            <ImageView
+                                android:layout_width="126dp"
+                                android:layout_height="166dp"
+                                android:src="@drawable/phone" />
+
+                            <ImageView
+                                android:layout_width="113dp"
+                                android:layout_height="148dp"
+                                android:src="@drawable/furnture" />
+
+                            <ImageView
+                                android:layout_width="123dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/boy" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="49dp"
+                            android:layout_marginStart="11dp"
+                            android:gravity="center"
+                            android:text="كل التجار >"
+                            android:textSize="19dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="49dp"
+                            android:layout_marginStart="101dp"
+                            android:text="التجار المتميزين "
+                            android:textSize="22.7dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="350dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bannarad" />
+
+                            <ImageView
+                                android:layout_width="350dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:src="@drawable/bannaraddd" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="129dp"
+                            android:layout_height="49dp"
+                            android:layout_marginStart="240dp"
+                            android:gravity="center"
+                            android:text="الفيديوهات "
+                            android:textSize="22.7dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="126dp"
+                                android:layout_height="166dp"
+                                android:src="@drawable/phone" />
+
+                            <ImageView
+                                android:layout_width="126dp"
+                                android:layout_height="166dp"
+                                android:src="@drawable/phone" />
+
+                            <ImageView
+                                android:layout_width="126dp"
+                                android:layout_height="166dp"
+                                android:src="@drawable/boy" />
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </ScrollView>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+

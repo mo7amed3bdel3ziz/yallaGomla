@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YallaJomla</string>
+    <string name="view_all">view all</string>
+    <string name="view_all1">More Offers ></string>
+    <string name="header1">Search about what,Mohamed ?</string>
+    <string name="header2">Good Offers</string>
+    <string name="header3">Distinguished Traders</string>
+    <string name="view_all_traders">All traders ></string>
+
+    <string name="title">Title</string>
+    <string name="on_line">on line</string>
+    <string name="on_shop">On shop</string>
+    <string name="sub_title">sub title</string>
+    <string name="videos">Videos</string>
+</resources>
